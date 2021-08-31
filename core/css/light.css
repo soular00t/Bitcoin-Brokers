@@ -1,0 +1,115 @@
+html, body { 
+	min-width:100%;
+	min-height:100%;
+	height: 100%;
+	background:#999;
+	color:#9f9f9f;
+	font-family:Sans-Serif;
+	display:flex;
+	flex-direction:column;
+}
+body a img {
+	opacity:0.6;
+}
+body a img:hover {
+	opacity:1.0;
+}
+#wrapper {
+	margin:0 auto;
+	margin-top:20px;
+	min-width:95%;
+	max-width:95%;
+	min-height:auto;
+	border:1px solid #010101;
+	background:#777;
+}
+a {
+	color:#9f9f9f;
+	text-decoration:none;
+}
+a:hover {
+	color:white!important;
+}
+.navbar .navbar-nav {
+	display:inline-block;
+	vertical-align:top;
+	text-align:center;
+	text-transform:uppercase;
+	font-weight:bold;
+	color:rgba(255,255,255,0.3);
+	background:transparent;
+}
+.navbar-inverse {
+	background:linear-gradient(#777,#666);
+	border:1px solid black;
+	border-top:none;
+	border-bottom:1px solid rgba(255,255,255, 0.1);
+	box-shadow: 0 4px 4px -2px rgba(0,0,0,0.6);
+	min-width:95%;
+	max-width:95%;
+	margin:0 auto;
+}
+.navbar .navbar-nav li {
+	text-align:center;
+}
+.navbar-brand {
+	display:inline-flex;
+	text-transform:uppercase;
+	font-weight:bold;
+	color:rgba(255,255,255,0.3);
+}
+.container {
+	margin-bottom:10%!important;
+}
+.container pre {
+	background:#323232;
+	color:#999;
+}
+#footer {
+	vertical-align:middle;
+	max-width:94.9%;
+	min-width:94.9%;
+	border-top:1px solid rgba(255,255,255, 0.1);
+	box-shadow:0 -5px 5px -5px rgba(0,0,0,0.6);
+	position:fixed; bottom:0;
+	margin:0 auto;
+	padding-top:10px;
+	padding-bottom:10px;
+	background:linear-gradient(#666,#777);
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+	background:linear-gradient(#111,#000);
+}
+@media (max-width: 600px) and (orientation:portrait) {
+	img.banner {
+		margin-top:20px;
+		min-width:100%;
+	}
+	.container {
+		margin-bottom:20px!important;
+	}
+
+	#footer {
+		vertical-align:middle;
+		min-width:100%;
+		border-top:1px solid rgba(255,255,255, 0.1);
+		box-shadow:0 -5px 5px -5px rgba(0,0,0,0.6);
+		position:relative; bottom:0;
+		margin:0 auto;
+		padding-top:10px;
+		padding-bottom:10px;
+		background:linear-gradient(#666, #777);
+	}
+	#footer div {
+		width:100%;
+		text-align:center!important;
+		border:1px solid black;
+		padding:7px;
+	}
+	#footer div:first-child {
+		border-top:none;
+	}
+	#footer div:last-child {
+		border-bottom:none;
+	}
+}
